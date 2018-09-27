@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cp /Escritorio/UGR/2ºCiclo/1º Cuatrimestre 2ºC/SO/Practicas/MOD1-Sesion1/*.gz /tmp
+gunzip ./tmp/kernel32-3.0.4.gz
+gunzip ./tmp/Fedora14-x86-root_fs.gz
+cd /tmp/
+./kernel32-3.0.4 ubda=./Fedora14-x86-root_fs mem=1024m
+
+
